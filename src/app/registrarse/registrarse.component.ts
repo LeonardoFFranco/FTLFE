@@ -22,7 +22,7 @@ export class RegistrarseComponent implements OnInit {
   save(event) {
     event.preventDefault();
     var newUsuario={
-      "id":this.data_id,
+      "id":null,
       "correo":this.data_correo,
       "password":this.data_password,
       "nombre_usr":this.data_nombre_usr,
