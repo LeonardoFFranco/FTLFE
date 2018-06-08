@@ -11,4 +11,15 @@
 <!--  Fecha Inicio Membresia<input type="text" [(ngModel)]="data_fecha_inicio_membresia" name="u" placeholder="fecha_inicio_membresia" required="required" /><br>-->
   Numero Tarjeta<input type="text" [(ngModel)]="data_numero_tarjeta" name="u" placeholder="data_numero_tarjeta" required="required" /><br>
   <input type="button" value="Aceptar Cambios" class="btn btn-primary btn-block" (click)="update($event)" />
+
+  <div class="row">
+    <div class="col s8 offset-2">
+      
+      <form #imageForm=ngForm (ngSubmit)="OnSubmit(Caption,Image)">
+       
+        <img [src]="imageUrl"  style="width:350px;height:300px">
+        <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)">
+      </form>
+    </div>
+  </div>
 </div>
