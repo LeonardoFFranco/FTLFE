@@ -14,9 +14,9 @@ body {
 
 body.welc {
   margin: 0;
-  background-image: url("resources\flames1.gif");
-  background-repeat: repeat-x;
-  background-position: center bottom;
+  background-image: url("resources\flames1.gif"), url("resources\background1.gif");
+  background-repeat: repeat-x, no-repeat;
+  background-position: center bottom, center;
   font-family: verdana;
 }
 
@@ -29,14 +29,21 @@ body.log {
 }
 
 
-
 h1.wel {
   text-align: center;
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   /*font-family: 'Luckiest Guy', cursive;*/
 }
 
+.title {
+  background-color: cornflowerblue;
+  /*font-family: 'Luckiest Guy', cursive;*/
+}
+
+h4.wel{
+  font-size: 20px;
+}
 
 /*PARA NAVIGATION BAR*/
 /* Style the top navigation bar */
@@ -151,6 +158,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
 }
 
 .centerme {
