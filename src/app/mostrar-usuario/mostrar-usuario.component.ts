@@ -16,7 +16,7 @@ import { MostrarUsuarioService } from './mostrar-usuario.service';
   <br>Cantidad Membresias:  {{dataTest.cantidad_membresias}}
   <br>Fecha Inicio Membresias:  {{dataTest.fecha_inicio_membresia}}
   <br>Numero Tarjeta:  {{dataTest.numero_tarjeta}}
-    <br><br><button class="button"><a class="colorwhite" routerLink="/mostrar_usuario">Editar</a></button>
+    <br><br><button class="button"><a class="colorwhite" routerLink="/editar_usuario">Editar</a></button>
 </div>`
 })
 export class MostrarUsuarioComponent implements OnInit {
@@ -40,7 +40,7 @@ export class MostrarUsuarioComponent implements OnInit {
     this.serviciod.getUsuario(id).subscribe(
       res => {
         console.log(res);
-        console.log('data response body'+res['_body']);
+        console.log('data response body'+ res['_body']);
         this.dataTest = JSON.parse(res['_body']);
         console.log('body '+this.dataTest);
       }
