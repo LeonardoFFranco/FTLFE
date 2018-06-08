@@ -9,8 +9,6 @@ export class MostrarUsuarioService {
   constructor(
     private http: Http) {}
 
-
-
     getUsuario(id): Observable<HttpResponse<any>> {
       let url = `http://localhost:8000/FlameTuneLibrary/usuarios/get/${id}`;
       let data = url
