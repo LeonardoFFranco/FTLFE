@@ -12,6 +12,8 @@ import { RegistrarseService } from './registrarse/registrarse.service';
 import { EditarUsuarioService } from './editar-usuario/editar_usuario.service';
 import { MostrarUsuarioService } from './mostrar-usuario/mostrar-usuario.service';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { PlaylistsComponent } from './playlists/playlists.component';
+import {PlaylistsService} from './playlists/playlists.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     IniciarSesionComponent,
     MostrarUsuarioComponent,
     EditarUsuarioComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    PlaylistsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,13 +46,17 @@ import { WelcomeComponent } from './welcome/welcome.component';
         path:'welcome',
         component: WelcomeComponent
       },
-     { 
+     {
       path:'editar_usuario',
       component:EditarUsuarioComponent
-     } 
+     },
+      {
+        path:'playlists',
+        component:PlaylistsComponent
+      }
     ])
   ],
-  providers: [RegistrarseService,EditarUsuarioService,MostrarUsuarioService],
+  providers: [RegistrarseService,EditarUsuarioService,MostrarUsuarioService,PlaylistsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

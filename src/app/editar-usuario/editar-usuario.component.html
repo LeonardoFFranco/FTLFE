@@ -1,14 +1,6 @@
 <div class="registrarse">
   <h1>Editar Profile</h1>
-  UserPicture
-    <div class="row">
-      <div class="col s8 offset-2">
-        <form #imageForm=ngForm (ngSubmit)="OnSubmit(Caption,Image)">
-          <img [src]="imageUrl"  style="width:350px;height:300px">
-          <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)">
-        </form>
-      </div>
-    </div>
+  UserPicture<input type="text" [(ngModel)]="data_url_foto_usr" name="u" placeholder="Ej.: https://justalink.png"/><br>
    <!-- Id<input type="text" [(ngModel)]="data_id" name="u" placeholder="id" required="required" /><br>-->
   Correo<input type="text" [(ngModel)]="data_correo" name="u" placeholder="correo" required="required" /><br>
   Password<input type="text" [(ngModel)]="data_password" name="u" placeholder="password" required="required" /><br>

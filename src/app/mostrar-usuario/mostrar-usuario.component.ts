@@ -8,11 +8,11 @@ import { MostrarUsuarioService } from './mostrar-usuario.service';
   name<input type="text" [(ngModel)]="data_id" name="u" placeholder="id" required="required" />
   <input type="button" value="obtener" class="btn btn-primary btn-block" (click)="get($event, this.data_id)" />
   <br>  Usuario  <br>
+    <br>UserPicture:  <img src="{{dataTest.url_foto_usr}}">
   <br>Id : {{dataTest.id}}
   <br>Correo: {{dataTest.correo}}
   <br>Password:  {{dataTest.password}}
   <br>Nombre:  {{dataTest.nombre_usr}}
-  <br>URL:  {{dataTest.url_foto_usr}}
   <br>Cantidad Membresias:  {{dataTest.cantidad_membresias}}
   <br>Fecha Inicio Membresias:  {{dataTest.fecha_inicio_membresia}}
   <br>Numero Tarjeta:  {{dataTest.numero_tarjeta}}

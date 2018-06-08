@@ -1,0 +1,22 @@
+<body class="reg">
+<div class="playlists">
+  <h1>
+    Playlists
+  </h1>
+  <h2>Crear</h2>
+  Nombre de lista<input type="text" [(ngModel)]="data_nomli" name="u" placeholder="Ej.: An awesome playlist" required="required" /><br>
+  Tipo de Acceso<input type="text" [(ngModel)]="data_password" name="u" placeholder="Ej.: 'Public' or 'Private' " required="required" /><br>
+  <input type="button" value="Crear" class="btn btn-primary btn-block" (click)="save($event)" />
+
+  <h2>Editar</h2>
+  Nombre Actual de lista<input type="text" [(ngModel)]="data_nomli" name="u" placeholder="Ej.: An awesome playlist" required="required" /><br>
+  Nombre Nuevo de lista<input type="text" [(ngModel)]="data_nomlinew" name="u" placeholder="Ej.: An even more awesome playlist " required="required" /><br>
+  <input type="button" value="Editar" class="btn btn-primary btn-block" (click)="save($event)" />
+
+  <h2>Eliminar</h2>
+  Nombre de lista<input type="text" [(ngModel)]="data_nomli" name="u" placeholder="Ej.: An awesome playlist" required="required" /><br>
+  <input type="button" value="Eliminar" class="btn btn-primary btn-block" (click)="save($event)" />
+
+  <br><br><br><br><br><br><br><br><br>
+</div>
+</body>
