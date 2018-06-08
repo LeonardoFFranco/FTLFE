@@ -28,7 +28,6 @@ body.log {
   font-family: verdana;
 }
 
-
 h1.wel {
   text-align: center;
   color: white;
@@ -167,4 +166,8 @@ input[type=submit]:hover {
 
 .centerme {
   text-align: center;
+}
+
+.imglines {
+  float: right;
 }
