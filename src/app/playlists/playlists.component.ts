@@ -10,11 +10,11 @@ export class PlaylistsComponent implements OnInit {
 
   data_id:any;
 
-  data_nomli:any;
+  data_nombre_playlist:any;
   data_nomli1:any;
   data_nomli2:any;
   data_nomli3:any;
-  data_accesoli: any;
+  data_tipo_acceso_playlist: any;
   data_nomlinew:any;
 
   constructor(private serviciod: PlaylistsService) { }
@@ -24,17 +24,17 @@ export class PlaylistsComponent implements OnInit {
 
     var newList={
       "id":null,
-      "nombre_list": this.data_nomli,
-      "tipo_acceso": this.data_accesoli
+      "nombre_playlist": this.data_nombre_playlist,
+      "tipo_acceso_playlist": this.data_tipo_acceso_playlist
     }
     this.serviciod.crearPlaylist(this.data_id, newList);
 
-    var newList = {
+   /* var newList = {
       "nombre_list": this.data_nomli1,
       "tipo_acceso": this.data_accesoli
     }
     this.serviciod.crearPlaylist(this.data_id,newList);
-
+*/
 
   }
 

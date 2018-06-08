@@ -16,11 +16,11 @@ export class PlaylistsService {
     headers.append('Content-Type', 'application/json');
     headers.append('Accept', 'application/json');
     let requestOptions = new RequestOptions({
-      method: RequestMethod.Put,
+      method: RequestMethod.Post,
       url: url,
       headers: headers,
       body: data
     });
-    return this.http.put(url,data,requestOptions).forEach(res => res.json());
+    return this.http.post(url,data,requestOptions).forEach(res => res.json());
   }
 }
