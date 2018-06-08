@@ -4,7 +4,7 @@ import { MostrarUsuarioService } from './mostrar-usuario.service';
 @Component({
   selector: 'app-mostrar-usuario',
   template: `<div class="login">
-  <h1><font color="black">Obtener Libro</font></h1>
+  <h1>MyProfile</h1>
   name<input type="text" [(ngModel)]="data_id" name="u" placeholder="id" required="required" />
   <input type="button" value="obtener" class="btn btn-primary btn-block" (click)="get($event, this.data_id)" />
   <br>  Usuario  <br>
@@ -16,6 +16,7 @@ import { MostrarUsuarioService } from './mostrar-usuario.service';
   <br>Cantidad Membresias:  {{dataTest.cantidad_membresias}}
   <br>Fecha Inicio Membresias:  {{dataTest.fecha_inicio_membresia}}
   <br>Numero Tarjeta:  {{dataTest.numero_tarjeta}}
+    <br><br><button class="button"><a class="colorwhite" routerLink="/mostrar_usuario">Editar</a></button>
 </div>`
 })
 export class MostrarUsuarioComponent implements OnInit {
