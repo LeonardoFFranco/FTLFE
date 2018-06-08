@@ -11,6 +11,7 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
 import { RegistrarseService } from './registrarse/registrarse.service';
 import { EditarUsuarioService } from './editar-usuario/editar_usuario.service';
 import { MostrarUsuarioService } from './mostrar-usuario/mostrar-usuario.service';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MostrarUsuarioService } from './mostrar-usuario/mostrar-usuario.service
     RegistrarseComponent,
     IniciarSesionComponent,
     MostrarUsuarioComponent,
-    EditarUsuarioComponent
+    EditarUsuarioComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -36,8 +38,12 @@ import { MostrarUsuarioService } from './mostrar-usuario/mostrar-usuario.service
     {
       path:'mostrar_usuario',
       component: MostrarUsuarioComponent
-     }
-  ])  
+     },
+      {
+        path:'welcome',
+        component: WelcomeComponent
+      }
+    ])
   ],
   providers: [RegistrarseService,EditarUsuarioService,MostrarUsuarioService],
   bootstrap: [AppComponent]

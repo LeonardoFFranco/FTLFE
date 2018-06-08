@@ -10,7 +10,7 @@ export class RegistrarseService {
     private http: Http) {}
 
   registrarUsuario(newUsuario) {
-    let url = 'http://localhost:8090/FlameTuneLibrary/usuarios/create';
+    let url = 'http://localhost:8080/FlameTuneLibrary/usuarios/create';
     let data = JSON.stringify(newUsuario);
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');

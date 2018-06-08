@@ -8,9 +8,9 @@ export class EditarUsuarioService {
 
   constructor(
     private http: Http) {}
-    
+
   editarUsuario(id, Usuario) {
-    let url = `http://localhost:8090/FlameTuneLibrary/usuarios/put/${id}`;
+    let url = `http://localhost:8080/FlameTuneLibrary/usuarios/put/${id}`;
     let data = JSON.stringify(Usuario);
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');

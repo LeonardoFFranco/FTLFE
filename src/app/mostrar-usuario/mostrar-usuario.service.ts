@@ -12,7 +12,7 @@ export class MostrarUsuarioService {
 
 
     getUsuario(id): Observable<HttpResponse<any>> {
-      let url = `http://localhost:8090/FlameTuneLibrary/usuarios/get/${id}`;
+      let url = `http://localhost:8080/FlameTuneLibrary/usuarios/get/${id}`;
       let data = url
       let headers = new Headers();
       headers.append('Content-Type', 'application/json');
