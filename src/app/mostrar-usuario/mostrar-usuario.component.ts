@@ -22,6 +22,7 @@ export class MostrarUsuarioComponent implements OnInit {
   {
   }
 
+
   get(event, id) {
     this.serviciod.getUsuario(id).subscribe(
       res => {
