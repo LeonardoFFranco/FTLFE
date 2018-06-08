@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MostrarUsuarioService } from './mostrar-usuario.service.';
+import { MostrarUsuarioService } from './mostrar-usuario.service';
 
 @Component({
   selector: 'app-mostrar-usuario',
