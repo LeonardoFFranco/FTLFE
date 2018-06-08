@@ -10,7 +10,7 @@ import { MostrarUsuarioComponent } from './mostrar-usuario/mostrar-usuario.compo
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { RegistrarseService } from './registrarse/registrarse.service';
 import { EditarUsuarioService } from './editar-usuario/editar_usuario.service';
-import { MostrarUsuarioService } from './mostrar-usuario/mostrar-usuario.service.';
+import { MostrarUsuarioService } from './mostrar-usuario/mostrar-usuario.service';
 
 @NgModule({
   declarations: [
