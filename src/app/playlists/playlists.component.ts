@@ -9,7 +9,7 @@ import {PlaylistsService} from './playlists.service';
 export class PlaylistsComponent implements OnInit {
 
   data_id:any;
-
+  data_id_playlist:any;
   data_nombre_playlist:any;
   data_nomli1:any;
   data_nomli2:any;
@@ -23,13 +23,24 @@ export class PlaylistsComponent implements OnInit {
     event.preventDefault();
 
     var newList={
-      "id":this.data_id,
+      "id_playlist":this.data_id_playlist,
       "nombre_playlist": this.data_nombre_playlist,
       "tipo_acceso_playlist": this.data_tipo_acceso_playlist
-    }
+    } 
+
     this.serviciod.crearPlaylist(this.data_id, newList);
   }
 
+  delete(event) {
+    event.preventDefault();
+
+    var newList={
+      "id_playlist":this.data_id_playlist,
+  
+    }
+
+    this.serviciod.borrarPlaylist(this.data_id_playlist);
+  }
   update(event) {
     event.preventDefault();
 
@@ -46,3 +57,4 @@ export class PlaylistsComponent implements OnInit {
   }
 
 }
+
