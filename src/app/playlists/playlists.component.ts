@@ -23,19 +23,22 @@ export class PlaylistsComponent implements OnInit {
     event.preventDefault();
 
     var newList={
-      "id":null,
+      "id":this.data_id,
       "nombre_playlist": this.data_nombre_playlist,
       "tipo_acceso_playlist": this.data_tipo_acceso_playlist
     }
     this.serviciod.crearPlaylist(this.data_id, newList);
+  }
 
-   /* var newList = {
-      "nombre_list": this.data_nomli1,
-      "tipo_acceso": this.data_accesoli
+  update(event) {
+    event.preventDefault();
+
+    var newList={
+      "id_playlist":this.data_id,
+      "nombre_playlist": this.data_nombre_playlist,
+      "tipo_acceso_playlist": this.data_tipo_acceso_playlist
     }
-    this.serviciod.crearPlaylist(this.data_id,newList);
-*/
-
+    this.serviciod.updatePlaylist(this.data_id, newList)
   }
 
 
