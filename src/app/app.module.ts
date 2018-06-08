@@ -42,7 +42,11 @@ import { WelcomeComponent } from './welcome/welcome.component';
       {
         path:'welcome',
         component: WelcomeComponent
-      }
+      },
+     { 
+      path:'editar_usuario',
+      component:EditarUsuarioComponent
+     } 
     ])
   ],
   providers: [RegistrarseService,EditarUsuarioService,MostrarUsuarioService],
