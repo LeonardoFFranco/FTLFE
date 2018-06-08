@@ -10,6 +10,7 @@ import { MostrarUsuarioComponent } from './mostrar-usuario/mostrar-usuario.compo
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { RegistrarseService } from './registrarse/registrarse.service';
 import { EditarUsuarioService } from './editar-usuario/editar_usuario.service';
+import { MostrarUsuarioService } from './mostrar-usuario/mostrar-usuario.service.';
 
 @NgModule({
   declarations: [
@@ -31,10 +32,14 @@ import { EditarUsuarioService } from './editar-usuario/editar_usuario.service';
     {
       path:'iniciar_sesion',
       component: IniciarSesionComponent
-    }
+    },
+    {
+      path:'mostrar_usuario',
+      component: MostrarUsuarioComponent
+     }
   ])  
   ],
-  providers: [RegistrarseService,EditarUsuarioService],
+  providers: [RegistrarseService,EditarUsuarioService,MostrarUsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

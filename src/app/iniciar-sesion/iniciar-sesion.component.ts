@@ -9,6 +9,7 @@ export class IniciarSesionComponent implements OnInit {
   data_nombre_usr:any;
   data_password:any;
   
+  
   constructor() { }
 
   ngOnInit() {

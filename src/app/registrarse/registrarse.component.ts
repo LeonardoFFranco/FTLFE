@@ -26,10 +26,10 @@ export class RegistrarseComponent implements OnInit {
       "correo":this.data_correo,
       "password":this.data_password,
       "nombre_usr":this.data_nombre_usr,
-      "url_foto_usr":this.data_url_foto_usr,
-      "cantidad_membresias":this.data_cantidad_membresias,
-      "fecha_inicio_membresia":this.data_fecha_inicio_membresia,
-      "numero_tarjeta":this.data_numero_tarjeta
+      "url_foto_usr":null,
+      "cantidad_membresias":0,
+      "fecha_inicio_membresia":null,
+      "numero_tarjeta":null,
     }
     this.serviciod.registrarUsuario(newUsuario);
   
